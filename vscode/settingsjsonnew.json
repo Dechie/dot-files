@@ -1,0 +1,153 @@
+{
+
+    "workbench.colorTheme": "Monokai++",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": true, 
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "vim.vimrc.path": "$HOME/.codiumvimrc",
+    "vim.statusBarColors.easymotionmode": "",
+
+    "editor.lineNumbers": "relative",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.organizeImports": true,
+      "source.sortMembers": true,
+    },
+  "vim.leader": "<space>",
+  "vim.hlsearch": true,
+
+"vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    // switch between buffers
+
+    {"before": ["<S-h>"], "commands": [":bprevious"]},
+    {"before": ["<S-l>"], "commands": [":bnext"]},
+
+    // splits
+    {"before": ["leader", "v"], "commands": [":vsplit"]},
+    {"before": ["leader", "s"], "commands": [":split"]},
+
+    // panes
+    {
+      "before": ["leader", "h"], 
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"], 
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"], 
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"], 
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+
+
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    },
+    {"before": ["leader", "w"], "commands": ["workbench.action.files.save"]},
+    {"before": ["leader", "f"], "commands": ["workbench.action.quickOpen"]},
+    {"before": ["leader", "p"], "commands": ["workbench.acion.formatDocument"]},
+    {"before": ["leader", "q"], "commands": [":q!"] },
+
+  ],
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+
+  "vim.normalModeKeyBindings": [
+    {
+        "before": ["£"],
+        "after": [""]
+    }
+    
+],
+
+"vim.visualModeKeyBindings": [
+    {
+        "before": [
+            ">"
+        ],
+        "commands": [
+            "editor.action.indentLines"
+        ]
+    },
+    {
+        "before": [
+            "<"
+        ],
+        "commands": [
+            "editor.action.outdentLines"
+       ]
+    },
+
+    {"before": ["leader", "c"], "commands": ["editor.action.commentLine"]},
+    
+],
+"git.openRepositoryInParentFolders": "always",
+"editor.minimap.enabled": false,
+"workbench.iconTheme": "eq-material-theme-icons-darker",
+"security.workspace.trust.untrustedFiles": "open",
+"terminal.integrated.defaultProfile.linux": "zsh",
+"git.autofetch": true,
+"breadcrumbs.enabled": false,
+"git.suggestSmartCommit": false,
+"[php]": {
+  "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+},
+"haskell.manageHLS": "GHCup",
+"files.autoSave": "afterDelay",
+"window.menuBarVisibility": "toggle",
+"liveServer.settings.donotShowInfoMsg": true,
+"window.zoomLevel": 2,
+"dart.debugExternalPackageLibraries": true,
+"dart.debugSdkLibraries": true,
+"php.validate.enable": true,
+"php.validate.executablePath": "/usr/bin/php",
+"php.validate.run": "onSave", 
+"php.suggest.basic": true,
+"totalTypeScript.hideAllTips": false,
+"totalTypeScript.hideBasicTips": false,
+"[javascript]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"emmet.triggerExpansionOnTab": true, // enable tab to expanse emmet tags
+"blade.format.enable": true,
+"[blade]": {
+    "editor.autoClosingBrackets": "always",
+    "editor.defaultFormatter": "onecentlin.laravel-blade"
+},
+"workbench.sideBar.location": "right",
+"[css]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+}
